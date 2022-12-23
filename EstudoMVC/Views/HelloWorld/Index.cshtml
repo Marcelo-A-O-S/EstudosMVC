@@ -1,0 +1,11 @@
+﻿@model List<EstudoMVC.Models.DogViewModel>
+
+<h1>Dogs</h1>
+<ul>
+	@foreach (var dogs in Model)
+	{
+		<li>
+			@dogs.Name (@dogs.Age)
+		</li>
+	}
+</ul>
