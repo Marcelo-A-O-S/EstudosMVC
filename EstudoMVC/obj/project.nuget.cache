@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "iVnfCiotd9cQvPZFZe36hGA/YP18ygZ9ZvEF6LrqOn4GKahp0G+HtEOLEg8EHm6jd4HAd8ytqH+Zpla7nfJieQ==",
+  "dgSpecHash": "igZkVpBDCGiEtO9BiuGWv0E1yQYPqljYW0H8tMoN/BQaLzQvZ2LnT2aSUTtKjeBxIrcKHvtQidCQTInLdtJzCQ==",
   "success": true,
-  "projectFilePath": "C:\\estudos\\Aula\\EstudoMVC\\EstudoMVC\\EstudoMVC.csproj",
+  "projectFilePath": "C:\\EstudosMVC\\EstudoMVC\\EstudoMVC.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Marcelo\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
-    "C:\\Users\\Marcelo\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
-    "C:\\Users\\Marcelo\\.nuget\\packages\\microsoft.aspnetcore.razor.runtime\\2.2.0\\microsoft.aspnetcore.razor.runtime.2.2.0.nupkg.sha512",
-    "C:\\Users\\Marcelo\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.razor.runtime\\2.2.0\\microsoft.aspnetcore.razor.runtime.2.2.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }
