@@ -27,3 +27,13 @@ Esse projeto foi feito para aprimoramento dos meus conceitos de uso de arquitetu
  ![Diagramacaotrescamadas](https://user-images.githubusercontent.com/77033790/216140822-918b4aaa-3bfc-443e-9d60-614a08da822d.PNG)
 
 Nessa demonstração mostra a relação entre camadas na aplicação, aonde a camada de apresentação comunica com a camada de camada de negócio, onde a camada de négocio comunica com a camada de database que por sua vez faz o caminho reverso!
+
+## Licença
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+## Referência
+
+ - [Arquitetura de três camadas (tiers)](https://www.ibm.com/br-pt/cloud/learn/three-tier-architecture)
+
