@@ -12,7 +12,7 @@ Ainda em desenvolvimento...
 
 **Back-end:** ASP.NET Core, .NET, C#
 
-## Arquitetura Três camadas, um pouco sobre!
+## Arquitetura em três camadas, um pouco sobre!
 
  O que é arquitetura me três camadas? Arquitetura em três camadas é um padrão de arquitetura de projetos que consiste em dividir cada parte da aplicação, organizando cada parte em sua devida responsabilidade! 
 
