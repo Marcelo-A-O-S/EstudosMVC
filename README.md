@@ -1,6 +1,8 @@
 # Estudo API
 
 Esse projeto foi feito para aprimoramento dos meus conceitos adquiridos no projeto anterior, estou abordando neste projeto, conceitos mais usuais na programação usando a linguagem C# e o ambiente ASP.NET Core e aprofundando também o meu conhecimento em usos de query Sql Server, testando também técnicas mais elaboradas de organização!!  
+O intuito desse projeto é abordar um problema real com os conhecimentos que tenho e também os conhecimentos que irei adquirir durante o processo!  
+
 
 Esse projeto está em desenvolvimento, podendo ocorrer alterações devido ao seu desenvolvimento!
 
