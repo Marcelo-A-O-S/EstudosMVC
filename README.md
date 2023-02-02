@@ -23,7 +23,7 @@ Ainda em desenvolvimento...
  **Camada Database**: Conhecida como camada de banco de dados, essa camada é responsável pelo acesso ao banco de dados, qualquer função que seja responsavel por acessar o banco de dados, fica esta camada
 
 
- O benefício dessa arquitetura, é que pela sua divisão, possibilita de forma mais eficiente, escalar uma aplicação, sem que cada camada afete outra e dessa forma dedicando cada equipe a cada camada especifica de atuação em um contexto empresarial, aumentando a segurança de desenvolvimento!  
+ O benefício dessa arquitetura, é que pela sua divisão, possibilita de forma mais eficiente, escalar uma aplicação, sem que cada camada afete outra camada e dessa forma dedicando cada equipe a cada camada especifica de atuação em um contexto empresarial, aumentando a segurança de desenvolvimento!  
  Uma pequena demonstração em diagramação dos conceitos acima: 
  
  ![Diagramacaotrescamadas](https://user-images.githubusercontent.com/77033790/216140822-918b4aaa-3bfc-443e-9d60-614a08da822d.PNG)
