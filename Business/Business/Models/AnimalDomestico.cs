@@ -1,6 +1,6 @@
 ﻿namespace EstudoMVC.Models
 {
-    public class DogViewModel
+    public class AnimalDomestico
     {
         public int Id { get; set; }
         //Caracteristicas
@@ -8,9 +8,7 @@
         public int Idade { get; set; }
         public string Raca { get; set; }
         public string Tipo { get; set; }
-
-
-        public string Bio { get; set; }
+        public string Descricao { get; set; }
         
 
     }

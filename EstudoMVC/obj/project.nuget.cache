@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "igZkVpBDCGiEtO9BiuGWv0E1yQYPqljYW0H8tMoN/BQaLzQvZ2LnT2aSUTtKjeBxIrcKHvtQidCQTInLdtJzCQ==",
+  "dgSpecHash": "76DILQpAfmL6hrpcjLa3oYPCYfxG/6Ltf6Xmtf1CnopIdAoJ7erdguvwebEOa10lf3Fu+VHPqjY1q7Oo0/TzoQ==",
   "success": true,
-  "projectFilePath": "C:\\EstudosMVC\\EstudoMVC\\EstudoMVC.csproj",
+  "projectFilePath": "C:\\EstudosMVC\\EstudoMVC\\SecondyLife.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

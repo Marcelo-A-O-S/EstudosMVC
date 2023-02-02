@@ -154,9 +154,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\EstudosMVC\\EstudoMVC\\EstudoMVC.csproj",
-      "projectName": "EstudoMVC",
-      "projectPath": "C:\\EstudosMVC\\EstudoMVC\\EstudoMVC.csproj",
+      "projectUniqueName": "C:\\EstudosMVC\\EstudoMVC\\SecondyLife.csproj",
+      "projectName": "SecondyLife",
+      "projectPath": "C:\\EstudosMVC\\EstudoMVC\\SecondyLife.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "C:\\EstudosMVC\\EstudoMVC\\obj\\",
       "projectStyle": "PackageReference",
