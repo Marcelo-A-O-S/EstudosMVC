@@ -1,0 +1,12 @@
+C:\EstudosMVC\Database\Database\bin\Debug\net6.0\Database.deps.json
+C:\EstudosMVC\Database\Database\bin\Debug\net6.0\Database.dll
+C:\EstudosMVC\Database\Database\bin\Debug\net6.0\Database.pdb
+C:\EstudosMVC\Database\Database\obj\Debug\net6.0\Database.csproj.AssemblyReference.cache
+C:\EstudosMVC\Database\Database\obj\Debug\net6.0\Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\EstudosMVC\Database\Database\obj\Debug\net6.0\Database.AssemblyInfoInputs.cache
+C:\EstudosMVC\Database\Database\obj\Debug\net6.0\Database.AssemblyInfo.cs
+C:\EstudosMVC\Database\Database\obj\Debug\net6.0\Database.csproj.CoreCompileInputs.cache
+C:\EstudosMVC\Database\Database\obj\Debug\net6.0\Database.dll
+C:\EstudosMVC\Database\Database\obj\Debug\net6.0\refint\Database.dll
+C:\EstudosMVC\Database\Database\obj\Debug\net6.0\Database.pdb
+C:\EstudosMVC\Database\Database\obj\Debug\net6.0\ref\Database.dll
