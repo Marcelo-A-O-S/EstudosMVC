@@ -22,7 +22,6 @@ Ainda em desenvolvimento...
 
  **Camada Database**: Conhecida como camada de banco de dados, essa camada é responsável pelo acesso ao banco de dados, qualquer função que seja responsavel por acessar o banco de dados, fica esta camada
 
- Nesse projeto, por ser uma refatoração de código de um codigo já existente, haverá uma mudança no nomes da camada de apresentação, que manterei como estava no projeto original como estudo mvc, mas a lógica é a mesma utilizando essa arquitetura e sua responsabilidade não muda!
 
  O benefício dessa arquitetura, é que pela sua divisão, possibilita de forma mais eficiente, escalar uma aplicação, sem que cada camada afete outra e dessa forma dedicando cada equipe a cada camada especifica de atuação em um contexto empresarial, aumentando a segurança de desenvolvimento!  
  Uma pequena demonstração em diagramação dos conceitos acima: 
