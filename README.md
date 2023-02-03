@@ -32,6 +32,8 @@ Ainda em desenvolvimento...
 
 Nessa demonstração mostra a relação entre camadas na aplicação, aonde a camada de apresentação comunica com a camada de camada de negócio, onde a camada de négocio comunica com a camada de database que por sua vez faz o caminho reverso!
 
+Nessa projeto também será adicionado uma camada adicional chamada ModelDomain, já que será usado nesse projeto o framework do entityframework, para que assim possa ser feito a referência dos projetos de maneira que siga as condições de funcionalidades do projeto
+
 ## Licença
 
 [MIT](https://choosealicense.com/licenses/mit/)
