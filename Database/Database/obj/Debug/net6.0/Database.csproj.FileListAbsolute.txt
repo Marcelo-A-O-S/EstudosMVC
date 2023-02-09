@@ -10,3 +10,15 @@ C:\EstudosMVC\Database\Database\obj\Debug\net6.0\Database.dll
 C:\EstudosMVC\Database\Database\obj\Debug\net6.0\refint\Database.dll
 C:\EstudosMVC\Database\Database\obj\Debug\net6.0\Database.pdb
 C:\EstudosMVC\Database\Database\obj\Debug\net6.0\ref\Database.dll
+C:\SecondyLife\Database\Database\bin\Debug\net6.0\Database.deps.json
+C:\SecondyLife\Database\Database\bin\Debug\net6.0\Database.dll
+C:\SecondyLife\Database\Database\bin\Debug\net6.0\Database.pdb
+C:\SecondyLife\Database\Database\obj\Debug\net6.0\Database.csproj.AssemblyReference.cache
+C:\SecondyLife\Database\Database\obj\Debug\net6.0\Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\SecondyLife\Database\Database\obj\Debug\net6.0\Database.AssemblyInfoInputs.cache
+C:\SecondyLife\Database\Database\obj\Debug\net6.0\Database.AssemblyInfo.cs
+C:\SecondyLife\Database\Database\obj\Debug\net6.0\Database.csproj.CoreCompileInputs.cache
+C:\SecondyLife\Database\Database\obj\Debug\net6.0\Database.dll
+C:\SecondyLife\Database\Database\obj\Debug\net6.0\refint\Database.dll
+C:\SecondyLife\Database\Database\obj\Debug\net6.0\Database.pdb
+C:\SecondyLife\Database\Database\obj\Debug\net6.0\ref\Database.dll

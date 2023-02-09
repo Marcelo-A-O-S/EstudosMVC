@@ -1,4 +1,4 @@
-﻿namespace Business.Models
+﻿namespace ModelDomain.Models
 {
 	public class Autenticacao
     {

@@ -10,4 +10,18 @@
     <Compile Remove="Class1.cs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Database\Database\Database.csproj" />
+    <ProjectReference Include="..\..\DomainModel\ModelDomain\ModelDomain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="IGenericRepository\" />
+  </ItemGroup>
+
 </Project>

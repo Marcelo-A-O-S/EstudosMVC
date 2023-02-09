@@ -1,4 +1,6 @@
-﻿namespace EstudoMVC.Models
+﻿using System.Buffers.Text;
+
+namespace ModelDomain.Models
 {
     public class AnimalDomestico
     {
@@ -8,6 +10,7 @@
         public int Idade { get; set; }
         public string Raca { get; set; }
         public string Tipo { get; set; }
+        public byte ImagePerfil { get; set; }
         public string Descricao { get; set; }
         
 

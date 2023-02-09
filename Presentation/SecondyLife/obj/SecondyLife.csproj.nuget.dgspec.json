@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\EstudosMVC\\Presentation\\SecondyLife\\SecondyLife.csproj": {}
+    "C:\\SecondyLife\\Presentation\\SecondyLife\\SecondyLife.csproj": {}
   },
   "projects": {
-    "C:\\EstudosMVC\\Presentation\\SecondyLife\\SecondyLife.csproj": {
+    "C:\\SecondyLife\\Presentation\\SecondyLife\\SecondyLife.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\EstudosMVC\\Presentation\\SecondyLife\\SecondyLife.csproj",
+        "projectUniqueName": "C:\\SecondyLife\\Presentation\\SecondyLife\\SecondyLife.csproj",
         "projectName": "SecondyLife",
-        "projectPath": "C:\\EstudosMVC\\Presentation\\SecondyLife\\SecondyLife.csproj",
+        "projectPath": "C:\\SecondyLife\\Presentation\\SecondyLife\\SecondyLife.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\EstudosMVC\\Presentation\\SecondyLife\\obj\\",
+        "outputPath": "C:\\SecondyLife\\Presentation\\SecondyLife\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,6 +45,22 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
