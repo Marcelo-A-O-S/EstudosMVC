@@ -1,6 +1,8 @@
-# Estudo API
+# SecondLife - Estudo API
 
-Esse projeto foi feito para aprimoramento dos meus conceitos adquiridos no projeto anterior, estou abordando neste projeto, conceitos mais usuais na programação usando a linguagem C# e o ambiente ASP.NET Core e aprofundando também o meu conhecimento em usos de query Sql Server, testando também técnicas mais elaboradas de organização!!  
+Esse projeto foi feito para aprimoramento dos meus conceitos adquiridos no projeto anterior, estou abordando neste projeto, conceitos mais usuais na programação usando a linguagem C# e o ambiente ASP.NET Core e aprofundando os meus conhecimento, testando também técnicas mais elaboradas de organização!!  
+O intuito desse projeto é abordar um problema real com os conhecimentos que tenho e também os conhecimentos que irei adquirir durante o processo!  
+
 
 Esse projeto está em desenvolvimento, podendo ocorrer alterações devido ao seu desenvolvimento!
 
@@ -29,6 +31,8 @@ Ainda em desenvolvimento...
  ![Diagramacaotrescamadas](https://user-images.githubusercontent.com/77033790/216140822-918b4aaa-3bfc-443e-9d60-614a08da822d.PNG)
 
 Nessa demonstração mostra a relação entre camadas na aplicação, aonde a camada de apresentação comunica com a camada de camada de negócio, onde a camada de négocio comunica com a camada de database que por sua vez faz o caminho reverso!
+
+Nessa projeto também será adicionado uma camada adicional chamada ModelDomain, já que será usado nesse projeto o framework do entityframework, para que assim possa ser feito a referência dos projetos de maneira que siga as condições de funcionalidades do projeto!
 
 ## Licença
 
