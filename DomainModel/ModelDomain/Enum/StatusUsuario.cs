@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ModelDomain.Enum
 {
-    public enum TipoUsuario
+    public enum StatusUsuario
     {
-        Usuario = 0,
-        Administrador = 1
+        offline = 0,
+        online = 1,
     }
 }
