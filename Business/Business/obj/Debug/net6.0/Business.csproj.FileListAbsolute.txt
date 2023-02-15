@@ -22,3 +22,8 @@ C:\SecondyLife\Business\Business\obj\Debug\net6.0\Business.dll
 C:\SecondyLife\Business\Business\obj\Debug\net6.0\refint\Business.dll
 C:\SecondyLife\Business\Business\obj\Debug\net6.0\Business.pdb
 C:\SecondyLife\Business\Business\obj\Debug\net6.0\ref\Business.dll
+C:\SecondyLife\Business\Business\bin\Debug\net6.0\Database.dll
+C:\SecondyLife\Business\Business\bin\Debug\net6.0\ModelDomain.dll
+C:\SecondyLife\Business\Business\bin\Debug\net6.0\Database.pdb
+C:\SecondyLife\Business\Business\bin\Debug\net6.0\ModelDomain.pdb
+C:\SecondyLife\Business\Business\obj\Debug\net6.0\Business.csproj.CopyComplete

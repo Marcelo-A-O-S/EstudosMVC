@@ -22,3 +22,8 @@ C:\SecondyLife\Database\Database\obj\Debug\net6.0\Database.dll
 C:\SecondyLife\Database\Database\obj\Debug\net6.0\refint\Database.dll
 C:\SecondyLife\Database\Database\obj\Debug\net6.0\Database.pdb
 C:\SecondyLife\Database\Database\obj\Debug\net6.0\ref\Database.dll
+C:\SecondyLife\Database\Database\bin\Debug\net6.0\Database.runtimeconfig.json
+C:\SecondyLife\Database\Database\bin\Debug\net6.0\ModelDomain.dll
+C:\SecondyLife\Database\Database\bin\Debug\net6.0\ModelDomain.pdb
+C:\SecondyLife\Database\Database\obj\Debug\net6.0\Database.csproj.CopyComplete
+C:\SecondyLife\Database\Database\obj\Debug\net6.0\Database.genruntimeconfig.cache

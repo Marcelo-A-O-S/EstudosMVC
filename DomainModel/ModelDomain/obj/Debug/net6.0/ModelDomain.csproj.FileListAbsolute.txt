@@ -1,0 +1,12 @@
+C:\SecondyLife\DomainModel\ModelDomain\bin\Debug\net6.0\ModelDomain.deps.json
+C:\SecondyLife\DomainModel\ModelDomain\bin\Debug\net6.0\ModelDomain.dll
+C:\SecondyLife\DomainModel\ModelDomain\bin\Debug\net6.0\ModelDomain.pdb
+C:\SecondyLife\DomainModel\ModelDomain\obj\Debug\net6.0\ModelDomain.csproj.AssemblyReference.cache
+C:\SecondyLife\DomainModel\ModelDomain\obj\Debug\net6.0\ModelDomain.GeneratedMSBuildEditorConfig.editorconfig
+C:\SecondyLife\DomainModel\ModelDomain\obj\Debug\net6.0\ModelDomain.AssemblyInfoInputs.cache
+C:\SecondyLife\DomainModel\ModelDomain\obj\Debug\net6.0\ModelDomain.AssemblyInfo.cs
+C:\SecondyLife\DomainModel\ModelDomain\obj\Debug\net6.0\ModelDomain.csproj.CoreCompileInputs.cache
+C:\SecondyLife\DomainModel\ModelDomain\obj\Debug\net6.0\ModelDomain.dll
+C:\SecondyLife\DomainModel\ModelDomain\obj\Debug\net6.0\refint\ModelDomain.dll
+C:\SecondyLife\DomainModel\ModelDomain\obj\Debug\net6.0\ModelDomain.pdb
+C:\SecondyLife\DomainModel\ModelDomain\obj\Debug\net6.0\ref\ModelDomain.dll
