@@ -116,3 +116,5 @@ C:\SecondyLife\Presentation\SecondyLife\bin\Debug\net6.0\System.CodeDom.dll
 C:\SecondyLife\Presentation\SecondyLife\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 C:\SecondyLife\Presentation\SecondyLife\bin\Debug\net6.0\System.Text.Json.dll
 C:\SecondyLife\Presentation\SecondyLife\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\SecondyLife\Presentation\SecondyLife\bin\Debug\net6.0\Business.dll
+C:\SecondyLife\Presentation\SecondyLife\bin\Debug\net6.0\Business.pdb

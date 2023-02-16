@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Business\Business\Business.csproj" />
     <ProjectReference Include="..\..\Database\Database\Database.csproj" />
   </ItemGroup>
 
