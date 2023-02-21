@@ -1,17 +1,28 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 using Database.Context;
+using System;
 
 namespace Database.Generic
 {
     public abstract class Generic<T> : IDisposable, IGeneric<T> where T : class
     {
+        //private readonly DbContextOptions contexto;
+
         private readonly DbContextOptions<Contexto> contextOptions;
-        private readonly Contexto contexto;
-        public Generic(DbContextOptions<Contexto> dbContext, Contexto contexto)
+        //private readonly Contexto contexto;
+        //public Generic(DbContextOptions contexto)
+        //{
+        //    this.contexto = contexto;
+        //}
+        //public Generic()
+        //{
+
+        //}
+        public Generic()
         {
-            contextOptions = dbContext;
-            this.contexto = contexto;
+            contextOptions = new DbContextOptions<Contexto>();
+            
         }
         public void Add(T entity)
         {
@@ -34,7 +45,10 @@ namespace Database.Generic
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            using (var db = new Contexto(contextOptions))
+            {
+                db.Dispose();
+            }
         }
 
         public async Task<T> Get(Expression<Func<T, bool>> expression)
@@ -55,7 +69,7 @@ namespace Database.Generic
 
         public void Update(T entity)
         {
-            using (var data = new Contexto(contextOptions))
+            using (var data = new Contexto())
             {
                 data.Set<T>().Update(entity);
                 data.Set<T>().Entry(entity).State = EntityState.Modified;

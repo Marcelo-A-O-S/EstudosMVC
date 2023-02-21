@@ -1,4 +1,4 @@
-﻿using Business.Services.IServices;
+﻿using Business.Services.IServicesGeneric;
 using Business.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using System;

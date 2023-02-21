@@ -12,7 +12,7 @@ namespace ModelDomain.Models
         public string RefreshTokenJwt { get; set; }
         
         [ForeignKey("Usuario")]
-        public int Usuario_Id { get; set; }
+        public int UsuarioId { get; set; }
         public Usuario usuario { get; set; }
     }
 }

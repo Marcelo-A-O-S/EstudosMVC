@@ -18,7 +18,7 @@ namespace Business.ViewModel
         [Required(ErrorMessage = "Campo obrigatorio")]
         [PasswordPropertyText]
         public string Password { get; set; }
-        [Compare("Password",ErrorMessage = "Os senhas não batem, corrija para poder prosseguir")]
+        [Compare("Password",ErrorMessage = "As senhas não batem, corrija para poder prosseguir")]
         [Required(ErrorMessage = "Campo obrigatorio")]
         public string PasswordConfirmed { get; set; }
 

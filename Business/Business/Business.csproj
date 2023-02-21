@@ -21,8 +21,4 @@
     <ProjectReference Include="..\..\DomainModel\ModelDomain\ModelDomain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="IGenericRepository\" />
-  </ItemGroup>
-
 </Project>

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Business.Services.IServices
+namespace Business.Services.IServicesGeneric
 {
     public interface IRegisterUser
     {

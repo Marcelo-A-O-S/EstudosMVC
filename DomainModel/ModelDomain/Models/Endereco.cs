@@ -14,6 +14,7 @@ namespace ModelDomain.Models
         public string Cidade { get; set; }
         public string Bairro { get; set; }
         public string Estado { get; set; }
+        public string Rua { get; set; }
         public int NumeroDaCasa { get; set; }
         //Vinculo com a Tabela de Usuarios usando DataAnnotations
         [ForeignKey("Usuario")]
