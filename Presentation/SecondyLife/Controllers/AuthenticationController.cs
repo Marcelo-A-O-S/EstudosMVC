@@ -7,6 +7,7 @@ using ModelDomain.Models;
 using ModelDomain.Enum;
 using Business.Repository.Interfaces;
 using Business.Services;
+using Business.TokenJWT.ITokenJWT;
 
 namespace SecondyLife.Controllers
 {
@@ -14,23 +15,94 @@ namespace SecondyLife.Controllers
     [ApiController]
     public class AuthenticationController : ControllerBase, IRegisterUser
     {
-        private readonly UserManager<Usuario> userManager;
+        private readonly UserManager<Usuario> _userManager;
         private readonly SignInManager<Usuario> signInManager;
         private readonly GerenciadorEndereco _endereco;
+        private readonly ITokenJwt _jwt;
+        private readonly DataAuthentication autenticacao;
+
         //private readonly TesteEndereco<Endereco> testeEndereco;
 
-        public AuthenticationController(UserManager<Usuario> userManager, SignInManager<Usuario> signInManager, GerenciadorEndereco endereco )
+        public AuthenticationController(
+            UserManager<Usuario> userManager, 
+            SignInManager<Usuario> signInManager, 
+            GerenciadorEndereco endereco, 
+            ITokenJwt jwt, 
+            DataAuthentication autenticacao )
         {
-            this.userManager = userManager;
+            this._userManager = userManager;
             this.signInManager = signInManager;
             this._endereco = endereco;
+            this._jwt = jwt;
+            this.autenticacao = autenticacao;
             //this.testeEndereco = testeEndereco;
         }
         [HttpPost]
         [Route("Login")]
-        public Task<ActionResult> Login(LoginViewModel login)
+        public async Task<ActionResult> Login(LoginViewModel login)
         {
-            throw new NotImplementedException();
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    var user = await _userManager.FindByEmailAsync(login.Email);
+                    var result = await signInManager.CheckPasswordSignInAsync(user, login.Password, false);
+                    if(result.Succeeded == true)
+                    {
+                        result = await signInManager.PasswordSignInAsync(login.Email, login.Password, false, lockoutOnFailure: false);
+                        if (result.Succeeded == true)
+                        {
+                            user.statusUsuario = StatusUsuario.online;
+                            var userData = new UserData
+                            {
+                                Email = user.Email,
+                                userName = user.UserName,
+
+                            };
+                            if(user.statusUsuario != StatusUsuario.online)
+                            {
+                                user.statusUsuario = StatusUsuario.online;
+                                userData.Status = true;
+                                if (user.tipoUsuario != TipoUsuario.Usuario)
+                                {
+                                    userData.Role = "Admin";
+                                }
+                                else
+                                {
+                                    userData.Role = "User";
+                                }
+                                userData.TokenJwt = _jwt.CreateToken(userData);
+                                var auth = new Autenticacao
+                                {
+                                    TokenJwt = userData.TokenJwt,
+                                    UsuarioId = user.Id,
+                                };
+                                await _userManager.UpdateAsync(user);
+                                autenticacao.Add(auth);
+                            }
+                            return Ok(userData);
+
+                        }
+                        else
+                        {
+                            return NotFound("Usuário não registrado ou informações incorretas!");
+                        }
+                    }
+                    else
+                    {
+                        return BadRequest("Senha incorreta, corrija e tenta novamente!");
+                    }
+                }
+                else
+                {
+                    return BadRequest("Corrija as informações!");
+                }
+            }
+            catch(Exception erro)
+            {
+                return BadRequest(erro.Message);
+            }
+            
         }
         [HttpPost]
         [Route("Teste")]
@@ -63,19 +135,18 @@ namespace SecondyLife.Controllers
         {
             if (ModelState.IsValid)
             {
-                
                 var user = new Usuario
                 {
                     UserName = register.Name,
                     Email = register.Email,
                     EmailConfirmed = true,
-                    tipoUsuario = TipoUsuario.Usuario
+                    tipoUsuario = TipoUsuario.Usuario,
+                    
                 };
-                
-                var result = await userManager.CreateAsync(user, register.Password);
-                if (result.Succeeded)
+                var result = await _userManager.CreateAsync(user, register.Password);
+                if (result.Succeeded == true)
                 {
-                    user = await userManager.FindByEmailAsync(register.Email);
+                    user = await _userManager.FindByEmailAsync(register.Email);
                     var endereco = new Endereco
                     {
                         Cidade = register.City,
@@ -85,6 +156,29 @@ namespace SecondyLife.Controllers
                         UsuarioId = user.Id,
                     };
                     _endereco.Add(endereco);
+                    user.statusUsuario = StatusUsuario.online;
+                    var userData = new UserData
+                    {
+                        Email = user.Email,
+                        userName = user.UserName,
+
+                    };
+                    if (user.statusUsuario != StatusUsuario.online)
+                    {
+                        user.statusUsuario = StatusUsuario.online;
+                        userData.Status = true;
+                        userData.Role = "User";
+                        userData.TokenJwt = _jwt.CreateToken(userData);
+                        var auth = new Autenticacao
+                        {
+                            TokenJwt = userData.TokenJwt,
+                            UsuarioId = user.Id,
+                        };
+                        await _userManager.UpdateAsync(user);
+                        autenticacao.Add(auth);
+                    }
+                    await signInManager.SignInAsync(user, isPersistent: false);
+                    return Ok(userData);
                 }
                 else
                 {
@@ -92,7 +186,6 @@ namespace SecondyLife.Controllers
                     foreach(var erro in result.Errors)
                     {
                         ModelState.AddModelError(string.Empty, erro.Description);
-                        //Erro += erro.Description + " \n";
                     }
                     return BadRequest(ModelState);
                     

@@ -6,8 +6,8 @@ namespace ModelDomain.Models
     {
         //Dados pertinentes para autenticação do usuário, dados para segurança de acesso
 		public int Id { get; set; }
-        public byte[] PasswordHash { get; set; }
-        public byte[] PasswordSalt { get; set; }
+        public string PasswordHash { get; set; }
+        
         public string TokenJwt { get; set; }
         public string RefreshTokenJwt { get; set; }
         

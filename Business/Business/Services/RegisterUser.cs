@@ -13,7 +13,7 @@ namespace Business.Services
     {
         public Task<ActionResult> Login(LoginViewModel login)
         {
-            throw new NotImplementedException();
+            
         }
 
         Task<ActionResult> IRegisterUser.Register(RegisterViewModel register)

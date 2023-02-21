@@ -2,6 +2,8 @@ using Business.Repository;
 using Business.Repository.Interfaces;
 using Business.Services;
 using Business.Services.IServicesGeneric;
+using Business.TokenJWT;
+using Business.TokenJWT.ITokenJWT;
 using Database.Context;
 using Database.Generic;
 using Microsoft.AspNetCore.Identity;
@@ -19,9 +21,12 @@ builder.Services.AddSwaggerGen();
 var ConnectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<Contexto>(options => options.UseSqlServer(ConnectionString));
 builder.Services.AddScoped<IGerenciadorEnderecoRepository, GerenciadorEnderecoRepository>();
+builder.Services.AddScoped<ITokenJwt, TokenJwt>();
 //builder.Services.AddScoped<IGerenciadorEndereco, GerenciadorEndereco>();
 builder.Services.AddScoped<IRepositoryGeneric<Endereco>, RepositoryGeneric<Endereco>>();
+builder.Services.AddScoped<IRepositoryGeneric<Autenticacao>, RepositoryGeneric<Autenticacao>>();
 builder.Services.AddScoped<GerenciadorEndereco>();
+builder.Services.AddScoped<DataAuthentication>();
 builder.Services.AddIdentity<Usuario, IdentityRole<int>>()
 	.AddEntityFrameworkStores<Contexto>();
 
